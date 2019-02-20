@@ -1,0 +1,16 @@
+//=========================================
+// import partials for styling this component
+//=========================================
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'variables';
+@import 'base';
+ //=========================================
+// register component styles here
+//=========================================
+@import './components/Hnavigation/hnavigation';
+@import './components/RangeSlideToSelect/rangeslidetoselect';
+@import './components/Button/button';
+@import './components/Search/search';
+
+
+

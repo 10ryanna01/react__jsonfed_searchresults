@@ -1,0 +1,15 @@
+////============================
+////buttons
+////============================
+
+.button {
+    @extend .btn;
+    &__primary {
+      background-color: $CTA--green;
+      background: $CTA--green;
+    }
+    &__secondary {
+      border: 2px solid red;
+    }
+  }
+

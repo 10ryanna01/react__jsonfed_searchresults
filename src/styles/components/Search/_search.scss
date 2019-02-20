@@ -1,0 +1,33 @@
+ 
+
+  ////////////////////////////////////////
+  /////// search-facet & searchoptions
+  ////////////////////////////////////////
+  .search-facet {
+    @extend .col-sm-12;
+    @extend .col-md-3;
+    @include media-breakpoint-between(xs, sm) {
+      display: none;
+    }
+  }
+  .search {
+    &__contents {
+      @extend .col-sm-12;
+      @extend .col-md-9;
+    }
+  }
+ 
+  .searchoptions {
+    &__open {
+      display: none;
+      @include primaryCTA;
+      @include media-breakpoint-down(md) {
+        ///thrown in form bootstrap           
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+      }
+    }
+  }

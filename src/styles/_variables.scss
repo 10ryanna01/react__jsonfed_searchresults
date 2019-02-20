@@ -1,0 +1,91 @@
+////============================
+// start variables
+////============================
+
+////============================
+///=== placeholder content variables
+////============================
+$placehold--day: "a month" ;
+$placehold--incvat: "inc VAT" ;
+$placehold--exvat: "ex VAT" ;
+$placehold--month: "a month" ;
+$placehold--year: "2019";
+
+
+
+////============================
+///=== placeholder variables
+////============================
+$bg--light: #ffffff;
+$CTA--green:  #50ff7d !default;
+$copy--black: #292b2c;
+$hover--loud: fuchsia;
+$grey--light: #efefef;
+$copy--link: #001eff;
+////==============================
+//// typography
+///===============================
+$body--copy: 1.0rem;
+$copy--price: 1.4rem;
+$body--small: 0.8rem;
+
+
+////==============================
+//// placeholders > mixins
+///===============================
+
+@mixin primaryCTA {
+    @extend .text-capitalize;
+    font-weight: 600;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex; 
+    font-size: $body--copy;
+    height: auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 120px;
+    width: 100%;
+    background-color: rgb(80, 255, 125);
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 10px 20px; 
+    border-style: none;
+ 
+
+    &:focus, &:hover {
+        cursor: pointer; 
+        background-color: rgb(0, 202, 77);
+        color: rgb(0, 0, 0); 
+        border-style: none;  
+    }
+
+}
+
+.primaryCTA{
+    @include primaryCTA;
+}
+
+
+
+.searchdropdown{
+    //used these stlyles scraped these stles from your site
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+    height: 40px;
+    padding: 0px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+
+

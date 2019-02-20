@@ -1,0 +1,24 @@
+
+
+////==============================
+//// Range slider  overrrides for now...
+///===============================
+
+  
+// start input range 
+.slider {
+    //simple over ride for now
+    .rangeslider-horizontal {
+      height: 3px;
+    }
+    .value {
+      @extend .text__title;
+    }
+  }
+  .rangeslider__handle-tooltip {
+    display: none !important;
+  }
+  .rangeslider-horizontal .rangeslider__handle:after {
+    display: none;
+  }
+  // end input range

@@ -1,0 +1,99 @@
+// ===================================
+// base and initial global settings
+// ===================================
+
+* {
+    color: $copy--black; // set default text color
+  
+    //bootstrap reset will do the rest
+}
+
+// ===================================
+// page header for now....
+// ===================================
+
+.pageheader {
+    @extend .pt-2;
+    @extend .pb-2;
+    background: $bg--light;
+    @extend .fixed-top;
+    &:after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      height: 2px;
+      background: $grey--light;
+      width: 100%;
+    }
+  }
+
+
+
+// ===================================
+  //text and titles and copy styling
+// ===================================
+  .text {
+    text-align: center;
+    text-transform: capitalize;
+    &__title {
+      font-size: $body--copy;
+      @extend .mt-2;
+      text-align: left;
+    }
+    &__link {
+      color: $copy--link;
+      font-size: $body--copy;
+      font-weight: 600;
+      text-align: left;
+      background: none;
+      border: 0;
+    }
+    &__limit {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; //this could be customised 
+      max-width: 200px;
+    }
+    &__overlay {
+      //overlay helper
+      @extend .position-absolute;
+      z-index: 5;
+      right: 15%;
+      top: 5%;
+      -webkit-transform: translate(-75%, -5%);
+      transform: translate(15%, -5%);
+      text-align: right;
+      max-width: 100px;
+      &:after {
+        content:" #{$placehold--day} "; //using sass placeholders for now
+        display: block;
+        font-size: $body--small;
+      }
+    }
+    &__price {
+      font-size: $copy--price;
+      font-weight: 600;
+    }
+  }
+
+
+  
+
+   ////===================
+  /// fun test classes 
+  ///=====================
+  .wtf {
+    border: 3px solid red;
+  }
+  .brutal {
+    font-size: 130%;
+    color: red;
+  }
+  .hellyeah {
+    background: greenyellow;
+    padding: 20px;
+    width: 100%;
+    display: inline-block;
+  }
+

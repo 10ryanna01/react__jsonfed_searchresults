@@ -1,0 +1,21 @@
+  ///////////////////////////
+  ///main nav
+  ///////////////////////////
+  .drover-nav {
+    @include media-breakpoint-between(xs, sm) {
+      display: none;
+    }
+    @extend .nav;
+    align-items: center;
+    &__item {
+      @extend .nav-item; //extend in boostrap classes for now
+      margin: 0;
+    } //keeping nesting shallow enough for selfdocumentation & readbility
+    &__item__link {
+      @extend .nav-link;
+      color: $copy--black;
+      &:hover {
+        color: $hover--loud;
+      }
+    }
+  }
